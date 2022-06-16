@@ -1,0 +1,60 @@
+{
+    "name": "qchat-cloud/laravel-orm-elasticsearch",
+    "description": "Laravel, Lumen and Native php elasticseach query builder to build complex queries using an elegant syntax",
+    "keywords": [
+        "elasticsearch",
+        "php",
+        "laravel",
+        "lumen",
+        "scout",
+        "fulltext",
+        "indexing",
+        "builder"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "homepage": "https://github.com/qchat-cloud",
+    "support": {
+        "issues": "https://github.com/qchat-cloud/laravel-orm-elasticsearch/issues"
+    },
+    "authors": [
+        {
+            "name": "qchat-cloud",
+            "email": "529393997@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qchat\\Elasticsearch\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Qchat\\Elasticsearch\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "elasticsearch/elasticsearch": "^5.0|^6.0",
+        "illuminate/pagination": "*",
+        "illuminate/support": "*",
+        "symfony/var-dumper": "*",
+        "monolog/monolog": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qchat\\Elasticsearch\\ElasticsearchServiceProvider"
+            ],
+            "aliases": {
+                "ES": "Qchat\\Elasticsearch\\Facades\\ES"
+            }
+        }
+    }
+}
