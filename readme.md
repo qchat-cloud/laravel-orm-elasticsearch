@@ -63,7 +63,7 @@ $ php artisan vendor:publish --provider="Qchat\Elasticsearch\ElasticsearchServic
 
 ##### 1) Install package using composer.
 ```bash
-$ composer require basemkhirat/elasticsearch
+$ composer require qchat-cloud/laravel-orm-elasticsearch
 ```
 
 ##### 2) Add package service provider in `bootstrap/app.php`.
